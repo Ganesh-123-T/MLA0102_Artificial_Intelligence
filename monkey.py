@@ -5,10 +5,10 @@ states = [
 
 for s in states:
     monkey, box, bananas, hasBananas = s
-    if monkey != box:
-        action = 'Move to box'
-    elif not hasBananas:
+    if hasBananas:
+        action = 'Monkey eats bananas'
+    elif monkey == box:
         action = 'Climb box and get bananas'
     else:
-        action = 'Monkey eats bananas'
+        action = 'Move to box'
     print(f"Monkey:{monkey}, Box:{box}, Bananas:{bananas}, Action:{action}")

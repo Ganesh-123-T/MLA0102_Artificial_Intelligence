@@ -1,0 +1,1 @@
+- [x] Fix the logic in monkey.py by reordering the if-elif-else conditions to prioritize checking hasBananas first.
